@@ -84,7 +84,7 @@ const links = [
     text: "Tutorial",
     url: "https://www.gatsbyjs.com/docs/tutorial/",
     description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+      "great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
     color: "#E95800",
   },
   {
@@ -131,7 +131,7 @@ const IndexPage = () => {
     <main style={pageStyles}>
       <title>Home Page</title>
       <h1 style={headingStyles}>
-        Congratulations
+        Congraturations
         <br />
         <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
         <span role="img" aria-label="Party popper emojis">

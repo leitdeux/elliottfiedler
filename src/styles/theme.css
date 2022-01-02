@@ -1,0 +1,39 @@
+/* global vars */
+:root {
+	/* Eigopop branding vars */
+	--color-primary: #0684fa;
+	--color-secondary: #18c1ff;
+	--color-tertiary: #c5c3e8;
+	--color-quaternary: #44d7b6;
+	--color-accent: #b266f5;
+	--color-error: #ff2d55;
+	--color-card-view: var(--color-accent);
+	--color-scene-view: var(--color-secondary);
+	--color-karaoke-view: var(--color-error);
+	--color-activity-view: var(--color-quaternary);
+	--color-primary-fair: #9ACEFF;
+	--color-primary-light: #C4E2FF;
+	--color-primary-very-light: #E6F3FF;
+	--color-secondary-light: #C3EFFF;
+	--color-secondary-very-light: #E8F9FF;
+	--color-quaternary-light: #D0F4EC;
+	--color-quaternary-very-light: #E1F9F4;
+	--primary-gradient: linear-gradient(
+		to bottom,
+		var(--color-secondary),
+		var(--color-primary)
+	);
+	--primary-reverse-gradient: linear-gradient(
+		to top,
+		var(--color-secondary),
+		var(--color-primary)
+	);
+	/* General vars */
+	--content-max-width: 940px;
+	--shadow: 1px 2px 8px 1px rgba(50, 50, 50, 0.3);
+	--shadow-dark: 3px 4px 5px 1px rgba(50, 50, 50, 0.4);
+	--text-shadow: 0 2px 3px rgba(0,0,0,0.4);
+	--text-shadow-light: 0 2px 3px rgba(0,0,0,0.2);
+	--navbar-height: 52px;
+}
+ 
