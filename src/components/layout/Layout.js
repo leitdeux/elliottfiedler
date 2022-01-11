@@ -4,7 +4,7 @@ import { Container } from 'theme-ui';
 
 // components
 import Navbar from './navbar/Navbar';
-import Footer from './Footer';
+// import Footer from './Footer';
 import SEO from './SEO';
 
 
@@ -14,7 +14,8 @@ export default function Layout(props) {
 		containerStyle,
 		title,
 		description,
-		image
+		image,
+    intl
 	} = props;
 
 	return (
@@ -24,16 +25,15 @@ export default function Layout(props) {
 				description={description}
 				image={image}
 			/>
-			<Navbar />
+      <Navbar intl={intl} />
 			<Container
 				sx={{
-					pt: 'var(--navbar-height)',
+					// pt: 'var(--navbar-height)',
 					...containerStyle
 				}}
 			>
 				{children}
 			</Container>
-      <Footer />
 		</Container>
 	);
 }

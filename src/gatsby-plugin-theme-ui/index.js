@@ -1,14 +1,15 @@
 import systemPreset from '@theme-ui/preset-system';
 
-// TODO -- import themes for different UI primitives instead
-// of putting all styles in here directly
-
 export default {
 	...systemPreset,
 	config: {
 		useLocalStorage: false,
-		useColorSchemeMediaQuery: false
+		useColorSchemeMediaQuery: true
 	},
+  fonts: {
+    body: 'M-PLUS-1, system-ui, -apple-system, BlinkMacSystemFont, sans-serif',
+    heading: 'M-PLUS-1, system-ui, -apple-system, BlinkMacSystemFont, sans-serif',
+  },
 	fontWeights: {
 		body: 400,
 		heading: 600,
@@ -16,28 +17,30 @@ export default {
 	},
 	lineHeights: {
 		...systemPreset.lineHeights,
-		body: 1.9
+		body: 1.6
 	},
 	colors: {
 		...systemPreset.colors,
 		text: '#4a4a4a',
-		primary: 'var(--ep-color-primary)',
-		secondary: 'var(--ep-color-secondary)',
-		tertiary: 'var(--ep-color-tertiary)',
-		quaternary: 'var(--ep-color-quaternary)',
-		accent: 'var(--ep-color-accent)',
-		error: 'var(--ep-color-error)',
+		primary: 'var(--color-primary)',
+		secondary: 'var(--color-secondary)',
+		tertiary: 'var(--color-tertiary)',
+		quaternary: 'var(--color-quaternary)',
+		accent: 'var(--color-accent)',
+		error: 'var(--color-error)',
+    muted: 'lightgray',
 		modes: {
 			dark: {
 				...systemPreset.colors.modes.dark,
 				text: '#eee',
 				background: '#222',
-				primary: 'var(--ep-color-primary)',
-				secondary: 'var(--ep-color-secondary)',
-				tertiary: 'var(--ep-color-tertiary)',
-				quaternary: 'var(--ep-color-quaternary)',
-				accent: 'var(--ep-color-accent)',
-				error: 'var(--p-color-error)'
+				primary: 'var(--color-secondary)',
+				secondary: 'var(--color-secondary)',
+				tertiary: 'var(--color-tertiary)',
+				quaternary: 'var(--color-quaternary)',
+				accent: 'var(--color-accent)',
+				error: 'var(--p-color-error)',
+        muted: 'gray'
 			}
 		}
 	},
@@ -47,8 +50,10 @@ export default {
 			...systemPreset.styles.root,
 			a: {
 				color: 'text',
-				WebkitTapHighlightColor: 'rgba(255,255,255,0.3)'
+				WebkitTapHighlightColor: 'rgba(255,255,255,0.3)',
+        textDecoration: 'none'
 			},
+      fontFamily: 'body'
 		},
 	},
 	forms: {
@@ -56,7 +61,7 @@ export default {
 			border: 'none',
 			borderRadius: 10,
 			fontSize: [2, null, 3],
-			bg: 'var(--ep-color-primary-very-light)',
+			bg: 'var(--color-primary-very-light)',
 			color: 'primary',
 			'&[type=text]': {
 				pl: 3
@@ -76,7 +81,7 @@ export default {
 			border: 'none',
 			color: 'primary',
 			fontFamily: 'auto',
-			bg: 'var(--ep-color-primary-very-light)',
+			bg: 'var(--color-primary-very-light)',
 			borderRadius: 10,
 			'&[type=text]': {
 				fontSize: [2, null, 3],

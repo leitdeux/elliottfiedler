@@ -33,8 +33,6 @@ module.exports = {
         id: 'GTM-TRNFCG3',
         includeInDevelopment: false,
         defaultDataLayer: { platform: 'gatsby' },
-        enableWebVitalsTracking: true,
-        selfHostedOrigin: `https://${process.env.HOSTNAME}`
       }
     },
     'gatsby-plugin-react-helmet',
@@ -116,11 +114,10 @@ module.exports = {
       options: {
         path: `${__dirname}/src/services/locales`,
         languages,
-        defaultLanguage: 'ja',
+        defaultLanguage: 'en',
         redirect: false
       }
     },
-    'gatsby-plugin-theme-ui',
     'gatsby-plugin-mdx',
     {
       resolve: 'gatsby-source-filesystem',
@@ -130,5 +127,18 @@ module.exports = {
       },
       __key: 'pages',
     },
+    {
+      resolve: 'gatsby-omni-font-loader',
+      options: {
+        mode: 'async',
+        enableListener: true,
+        preconnect: ['https://fonts.gstatic.com'],
+        web: [{
+          name: 'M-PLUS-1',
+          file: 'https://fonts.googleapis.com/css2?family=M+PLUS+1'
+        }]
+      }
+    },
+    'gatsby-plugin-theme-ui',
   ],
 };

@@ -1,4 +1,9 @@
 {
-  "greeting": "Hi!",
-  "fullName": "Elliott Fiedler"
+  "greeting": "Nice to meet you!",
+  "subjectLine": "Let%27s work together!",
+  "selfIntro": "My name is Elliott Fiedler and I'm a software engineer.",
+  "cofounded": "In 2016, I co-founded a startup in Japan that provides 1-to-1 online English lessons for children. As CTO, I architected, built and deployed the service platform, internal tooling and client-facing web and mobile apps.",
+  "available": "I'm available to help out on a variety of projects.",
+  "twitter": "You can follow me on Twitter",
+  "github": "and check out my other projects on GitHub."
 }

@@ -1,6 +1,5 @@
 /* global vars */
 :root {
-	/* Eigopop branding vars */
 	--color-primary: #0684fa;
 	--color-secondary: #18c1ff;
 	--color-tertiary: #c5c3e8;
@@ -29,11 +28,15 @@
 		var(--color-primary)
 	);
 	/* General vars */
-	--content-max-width: 940px;
+	--content-max-width: 800px;
 	--shadow: 1px 2px 8px 1px rgba(50, 50, 50, 0.3);
 	--shadow-dark: 3px 4px 5px 1px rgba(50, 50, 50, 0.4);
 	--text-shadow: 0 2px 3px rgba(0,0,0,0.4);
 	--text-shadow-light: 0 2px 3px rgba(0,0,0,0.2);
-	--navbar-height: 52px;
+	--navbar-height: 82px;
 }
- 
+
+body {
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}

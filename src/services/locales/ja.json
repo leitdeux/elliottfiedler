@@ -1,4 +1,9 @@
 {
-  "greeting": "こんにちは！",
-  "fullName": "フィードラー・エリオット"
+  "greeting": "初めまして！",
+  "subjectLine": "お問い合わせ",
+  "selfIntro": "ソフトウェアエンジニアのフィードラー・エリオットです。",
+  "cofounded": "2016年に日本ではエイゴポップ株式会社を開業し、CTOとしてオンライン子供英会話サービスを開発しました。",
+  "available": "I'm available to help out on a variety of projects",
+  "twitter": "ツイッターでフォローや、",
+  "github": "GitHubで他のプロジェクトをチェックも。"
 }
