@@ -1,0 +1,18 @@
+{
+  "greeting": "こんにちは！👋",
+  "subjectLine": "お問い合わせ",
+  "selfIntro": "はじめまして、フィードラー・エリオットと申します。ウェブとモバイルのソフトウェアエンジニアです。",
+  "cofounded_start": "2016年に",
+  "cofounded_link": "日本でエイゴポップ株式会社を創業し",
+  "cofounded_end": "、最高技術責任者 (CTO) としてはオンライン子供英会話サービスのIT基盤や英語学習用アプリを開発しました。",
+  "available_start": "私は他のプロジェクトにも協力していきたいです。",
+  "available_link": "お気軽にお問い合わせください。",
+  "available_end": " ",
+  "twitter_start": "Twitterで",
+  "twitter_link": "フォローしたり",
+  "twitter_end": "、",
+  "github_start": "GitHubで",
+  "github_link":   "他のソフトをチェックする",
+  "github_end": "ことができます。どうぞよろしくお願いいたします。",
+  "page__home": "ホーム"
+}
