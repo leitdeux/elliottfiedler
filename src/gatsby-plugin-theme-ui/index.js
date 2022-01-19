@@ -7,8 +7,9 @@ export default {
 		useColorSchemeMediaQuery: true
 	},
   fonts: {
-    body: 'M-PLUS-1, system-ui, -apple-system, BlinkMacSystemFont, sans-serif',
-    heading: 'M-PLUS-1, system-ui, -apple-system, BlinkMacSystemFont, sans-serif',
+    body: "'M PLUS Rounded 1c', system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+    heading: "'M PLUS Rounded 1c', system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+    span: "'M PLUS Rounded 1c', system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
   },
 	fontWeights: {
 		body: 400,
@@ -29,18 +30,20 @@ export default {
 		accent: 'var(--color-accent)',
 		error: 'var(--color-error)',
     muted: 'lightgray',
+    divider: '#efefef',
 		modes: {
 			dark: {
 				...systemPreset.colors.modes.dark,
 				text: '#eee',
 				background: '#222',
 				primary: 'var(--color-secondary)',
-				secondary: 'var(--color-secondary)',
+				secondary: 'var(--color-primary-fair)',
 				tertiary: 'var(--color-tertiary)',
 				quaternary: 'var(--color-quaternary)',
 				accent: 'var(--color-accent)',
 				error: 'var(--p-color-error)',
-        muted: 'gray'
+        muted: 'gray',
+        divider: '#333'
 			}
 		}
 	},

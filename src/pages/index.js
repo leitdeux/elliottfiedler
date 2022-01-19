@@ -2,68 +2,128 @@
 import React from 'react';
 import {
   Container,
+  Flex,
   Link,
+  Image,
   Text,
 } from 'theme-ui';
 import {
   FormattedMessage,
-  useIntl,
-  changeLocale
+  useIntl
 } from 'gatsby-plugin-react-intl';
+import { openMailLink } from '../services';
 
 // components
 import Layout from '../components/layout/Layout';
 import Section from '../components/layout/Section';
 
+// images
+import ProfileImage from '../assets/images/profile.jpeg';
+
 
 function TextContainer(props) {
   const {
-    fontSize,
+    header,
     children
   } = props;
 
   return (
     <Container
       sx={{
-        py: 3,
-        fontSize: fontSize || 4
+        py: [2, 3],
+        fontSize: header ? [5, 6] : [3, 4],
       }}
     >
-      <Text>
+      <Text sx={{ whiteSpace: 'pre-wrap' }}>
         {children}
       </Text>
     </Container>
   );
 }
 
+function handleEmailClick(intl) {
+  openMailLink(intl.formatMessage({ id: 'subjectLine' }));
+}
+
 export default function LandingPage() {
   const intl = useIntl();
 
+  // TODO: test if this actually works on iOS (try on real iPad and iPhone)
+  const emailLink = (
+    <Link
+      onClick={() => handleEmailClick(intl)}
+      sx={{ cursor: 'pointer' }}
+    >
+      <FormattedMessage id="available_link" />
+    </Link>
+  );
+
 	return (
-		<Layout intl={intl}>
+		<Layout
+      intl={intl}
+      title="page__home"
+    >
       <Section>
-        <TextContainer fontSize={6}>
-          <FormattedMessage id="greeting" />
-        </TextContainer>
+        <Flex sx={{ alignItems: 'center', mb: [3, 0] }}>
+          <Image
+            src={ProfileImage}
+            alt=""
+            sx={{
+              height: [58, 72],
+              width: [58, 72],
+              minHeight: [58, 72],
+              minWidth: [58, 72],
+              objectFit: 'cover',
+              borderRadius: '50%',
+              mr: 3
+            }}
+          />
+          <TextContainer header>
+            <FormattedMessage id="greeting" />
+          </TextContainer>
+        </Flex>
         {/* 自己紹介 */}
         <TextContainer>
           <FormattedMessage id="selfIntro" />
         </TextContainer>
         {/* Stuff I've done */}
         <TextContainer>
-          <FormattedMessage id="cofounded" />
-          {/* In 2016, I co-founded a <Link target="_blank" rel="noopener noreferrer" href="https://eigopop.com">startup in Japan that provides 1-to-1 online English lessons for children.</Link> I architect, build and deploy the service platform, internal tooling and client-facing web and mobile apps. */}
+          <FormattedMessage id="cofounded_start" />
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://eigopop.com"
+          >
+            <FormattedMessage id="cofounded_link" />
+          </Link>
+          <FormattedMessage id="cofounded_end" />
         </TextContainer>
         {/* Availability */}
         <TextContainer>
-          {/* I'm <Link href={`mailto:elliott@elliottfiedler.com?subject=${intl.formatMessage({ id: 'subjectLine' })}`}>available</Link> to help out on a variety of projects. */}
-          <FormattedMessage id="available" />
+          <FormattedMessage id="available_start" />
+          {emailLink}
+          <FormattedMessage id="available_end" />
         </TextContainer>
         {/* Follow me and learn more */}
         <TextContainer>
-          {/* You can <Link href="https://twitter.com/leitdeux">follow me</Link> on Twitter and check out my other projects on <Link href="https://github.com/leitdeux">Github</Link>. */}
-          <FormattedMessage id="twitter" />
-          <FormattedMessage id="github" />
+          <FormattedMessage id="twitter_start" />
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/leitdeux"
+          >
+            <FormattedMessage id="twitter_link" />
+          </Link>
+          <FormattedMessage id="twitter_end" />
+          <FormattedMessage id="github_start" />
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/leitdeux"
+          >
+            <FormattedMessage id="github_link" />
+          </Link>
+          <FormattedMessage id="github_end" />
         </TextContainer>
       </Section>
     </Layout>

@@ -1,9 +1,18 @@
 {
-  "greeting": "Nice to meet you!",
-  "subjectLine": "Let%27s work together!",
-  "selfIntro": "My name is Elliott Fiedler and I'm a software engineer.",
-  "cofounded": "In 2016, I co-founded a startup in Japan that provides 1-to-1 online English lessons for children. As CTO, I architected, built and deployed the service platform, internal tooling and client-facing web and mobile apps.",
-  "available": "I'm available to help out on a variety of projects.",
-  "twitter": "You can follow me on Twitter",
-  "github": "and check out my other projects on GitHub."
+  "greeting": "Hi there! 👋",
+  "subjectLine": "Let's work together!",
+  "selfIntro": "My name is Elliott Fiedler and I build full-stack software targeting the web and mobile.",
+  "cofounded_start": "In 2016, ",
+  "cofounded_link": "I co-founded a startup in Japan providing interactive 1-to-1 online English lessons",
+  "cofounded_end": " for young learners. As CTO, I architected, built and deployed the service platform, internal tooling and client-facing web and mobile apps.",
+  "available_start": "I'm ",
+  "available_link": "available to help",
+  "available_end": " out on all kinds of software projects.",
+  "twitter_start": "You can ",
+  "twitter_link": "follow me",
+  "twitter_end": " on Twitter ",
+  "github_start": "and check out ",
+  "github_link": "my other projects",
+  "github_end": " on GitHub.",
+  "page__home": "Home"
 }

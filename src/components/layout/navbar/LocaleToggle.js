@@ -1,9 +1,9 @@
 /** @jsxImportSource theme-ui */
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Button,
 	Flex,
-	Text
+  Heading
 } from 'theme-ui';
 import {
   changeLocale,
@@ -13,14 +13,15 @@ import { Icon } from '@iconify/react';
 // icons
 import Globe from '@iconify-icons/mdi/web-box';
 
+
 export default function LocaleToggle({ intl }) {
 	return (
     <Button
       sx={{
         background: 'inherit',
         cursor: 'pointer',
-        width: 128,
         height: '100%',
+        pr: 0,
         color: 'text',
         '&:hover': {
           color: 'primary'
@@ -32,17 +33,18 @@ export default function LocaleToggle({ intl }) {
         <Icon
           icon={Globe}
           sx={{
-            fontSize: 30,
-            color: 'muted',
+            fontSize: 36
           }}
         />
-        <Text
+        <Heading
           sx={{
-            px: 1,
+            pl: 1,
+            fontSize: 2,
+            fontWeight: 'body'
           }}
         >
           {intl.locale === 'en' ? '日本語' : 'English'}
-        </Text>
+        </Heading>
       </Flex>
     </Button>
 	);

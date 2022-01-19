@@ -23,14 +23,14 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: 'UA-216111395-1',
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
         head: true
       },
     },
     {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
-        id: 'GTM-TRNFCG3',
+        id: process.env.GOOGLE_TAG_MANAGER_ID,
         includeInDevelopment: false,
         defaultDataLayer: { platform: 'gatsby' },
       }
@@ -134,8 +134,8 @@ module.exports = {
         enableListener: true,
         preconnect: ['https://fonts.gstatic.com'],
         web: [{
-          name: 'M-PLUS-1',
-          file: 'https://fonts.googleapis.com/css2?family=M+PLUS+1'
+          name: 'M PLUS Rounded 1c',
+          file: 'https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c'
         }]
       }
     },
