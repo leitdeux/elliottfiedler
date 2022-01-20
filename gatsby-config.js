@@ -16,7 +16,7 @@ module.exports = {
     siteUrl: `https://${process.env.HOSTNAME}`,
     twitterUsername: '@leitdeux',
     author: 'Elliott Fiedler',
-    twitterCardImage: 'images/site-twitter-card.png'
+    twitterCardImage: '/images/site-twitter-card.png'
   },
   plugins: [
     'gatsby-plugin-theme-ui',
@@ -127,7 +127,7 @@ module.exports = {
       },
       __key: 'pages',
     },
-    {
+    /* {
       resolve: 'gatsby-omni-font-loader',
       options: {
         mode: 'async',
@@ -138,6 +138,6 @@ module.exports = {
           file: 'https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c'
         }]
       }
-    }
+    } */
   ]
 };
