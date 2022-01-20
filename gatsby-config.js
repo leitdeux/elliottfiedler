@@ -138,7 +138,6 @@ module.exports = {
           file: 'https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c'
         }]
       }
-    },
-    'gatsby-plugin-theme-ui',
-  ],
+    }
+  ]
 };
