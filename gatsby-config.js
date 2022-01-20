@@ -20,7 +20,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-theme-ui',
-    {
+    /* {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
@@ -34,7 +34,7 @@ module.exports = {
         includeInDevelopment: false,
         defaultDataLayer: { platform: 'gatsby' },
       }
-    },
+    }, */
     'gatsby-plugin-react-helmet',
         {
       resolve: 'gatsby-plugin-sitemap',
