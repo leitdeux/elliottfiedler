@@ -2,12 +2,11 @@
 import React from 'react';
 import {
   Flex,
-  Heading,
-  Link,
   Divider
 } from 'theme-ui';
 
 // components
+import Logo from './Logo';
 import LocaleToggle from './LocaleToggle';
 
 
@@ -17,9 +16,9 @@ export default function Navbar({ intl }) {
       <Flex
         sx={{
           width: '100%',
+          height: 64,
           justifyContent: 'center',
-          py: 0.5,
-          px: [3, 4, 0]
+          px: [3, 4, 0],
         }}
       >
         <Flex
@@ -34,11 +33,7 @@ export default function Navbar({ intl }) {
               flex: '0.5'
             }}
           >
-            <Link href="/" sx={{ color: 'inherit' }}>
-              <Heading as="h3">
-                Elliott Fiedler
-              </Heading>
-            </Link>
+            <Logo />
           </Flex>
           <Flex
             sx={{
@@ -52,7 +47,7 @@ export default function Navbar({ intl }) {
           </Flex>
         </Flex>
       </Flex>
-      <Divider sx={{ borderColor: 'divider' }}/>
+      <Divider sx={{ borderColor: 'divider', m: 0 }}/>
     </div>
 	);
 }

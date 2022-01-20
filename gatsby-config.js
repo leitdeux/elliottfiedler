@@ -19,7 +19,7 @@ module.exports = {
     twitterCardImage: '/images/site-twitter-card.png'
   },
   plugins: [
-    /* {
+    {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
@@ -33,7 +33,7 @@ module.exports = {
         includeInDevelopment: false,
         defaultDataLayer: { platform: 'gatsby' },
       }
-    }, */
+    },
     'gatsby-plugin-react-helmet',
         {
       resolve: 'gatsby-plugin-sitemap',
@@ -81,7 +81,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: './src/assets/images/favicon/icon.png',
+        icon: './src/assets/images/favicon/icon.png'
       },
     },
     {
@@ -127,7 +127,7 @@ module.exports = {
       __key: 'pages',
     },
     'gatsby-plugin-theme-ui',
-    /* {
+    {
       resolve: 'gatsby-omni-font-loader',
       options: {
         mode: 'async',
@@ -138,6 +138,6 @@ module.exports = {
           file: 'https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c'
         }]
       }
-    } */
+    }
   ]
 };
