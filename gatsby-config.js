@@ -19,7 +19,6 @@ module.exports = {
     twitterCardImage: '/images/site-twitter-card.png'
   },
   plugins: [
-    'gatsby-plugin-theme-ui',
     /* {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
@@ -127,6 +126,7 @@ module.exports = {
       },
       __key: 'pages',
     },
+    'gatsby-plugin-theme-ui',
     /* {
       resolve: 'gatsby-omni-font-loader',
       options: {
