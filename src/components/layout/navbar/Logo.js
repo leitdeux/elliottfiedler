@@ -8,7 +8,7 @@ export default function Logo() {
 	return (
     <Link to="/" sx={{ color: 'inherit' }}>
       <Heading as="h3">
-        Elliott FIedler
+        Elliott Fiedler
       </Heading>
     </Link>
 	);
