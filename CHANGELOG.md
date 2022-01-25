@@ -1,3 +1,6 @@
+# 0.2.1 (January 25, 2022)
+*  b69ce40 Fix typo in navbar title text
+
 # 0.2.0 (January 25, 2022)
 *  f56538e Keep navbar title in English regardless of locale
 *  64b69d8 Enable automatic locale detection redirects and add favicon and twitter card images
