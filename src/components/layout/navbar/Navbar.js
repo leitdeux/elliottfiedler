@@ -18,7 +18,7 @@ export default function Navbar({ intl }) {
           width: '100%',
           height: 64,
           justifyContent: 'center',
-          px: [3, 4, 0],
+          px: [4, null, 0],
         }}
       >
         <Flex

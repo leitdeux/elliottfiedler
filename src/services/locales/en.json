@@ -1,10 +1,11 @@
 {
+  "navbarTitle": "Elliott Fiedler",
   "greeting": "Hi there! 👋",
   "subjectLine": "Let's work together!",
-  "selfIntro": "My name is Elliott Fiedler and I build full-stack software targeting the web and mobile.",
+  "selfIntro": "My name is Elliott Fiedler and I build full-stack software for web and mobile.",
   "cofounded_start": "In 2016, ",
   "cofounded_link": "I co-founded a startup in Japan providing interactive 1-to-1 online English lessons",
-  "cofounded_end": " for young learners. As CTO, I architected, built and deployed the service platform, internal tooling and client-facing web and mobile apps.",
+  "cofounded_end": " for young learners. As CTO, I designed, built and deployed the service platform, internal tooling and client-facing apps.",
   "available_start": "I'm ",
   "available_link": "available to help",
   "available_end": " out on all kinds of software projects.",

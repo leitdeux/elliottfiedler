@@ -42,7 +42,7 @@ export default function Section(props) {
 		<Container
 			id={id}
 			sx={{
-				p: paddingless ? 0 : [3, 4],
+				p: paddingless ? 0 : 4,
 				pt: 4,
 				position: 'relative',
 				overflow: 'hidden',

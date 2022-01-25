@@ -48,8 +48,8 @@ function handleEmailClick(intl) {
 export default function LandingPage() {
   const intl = useIntl();
 
-  // TODO: test if this actually works on iOS (try on real iPad and iPhone)
   const emailLink = (
+    // eslint-disable-next-line jsx-a11y/anchor-is-valid
     <Link
       onClick={() => handleEmailClick(intl)}
       sx={{ cursor: 'pointer' }}
