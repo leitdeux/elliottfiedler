@@ -114,7 +114,7 @@ module.exports = {
         path: `${__dirname}/src/services/locales`,
         languages,
         defaultLanguage: 'en',
-        redirect: false
+        redirect: true
       }
     },
     'gatsby-plugin-mdx',
