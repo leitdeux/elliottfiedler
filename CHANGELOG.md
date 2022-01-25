@@ -1,4 +1,5 @@
 # 0.2.0 (January 25, 2022)
+*  f56538e Keep navbar title in English regardless of locale
 *  64b69d8 Enable automatic locale detection redirects and add favicon and twitter card images
 
 # 0.1.0 (January 20, 2022)
